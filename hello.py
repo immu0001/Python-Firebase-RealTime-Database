@@ -1,5 +1,5 @@
 from firebase import firebase
-firebase = firebase.FirebaseApplication('https://pythontest-ac619.firebaseio.com/', None)
+firebase = firebase.FirebaseApplication('https://<example-app-id>firebaseio.com/', None)
 
 data =  {
           'Name': 'Hawlette Packard',
@@ -7,5 +7,5 @@ data =  {
           'Percentage': 85.02,
           'Phone': 7451231412
           }
-result = firebase.post('/pythontest-ac619/Student', data)
+result = firebase.post('/<example-app-id>-<app-number>/Student', data)
 print(result)
